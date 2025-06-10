@@ -1,0 +1,12 @@
+services:
+  travelrouteapi:
+    image: ${DOCKER_REGISTRY-}travelrouteapi
+    build:
+      context: .
+      dockerfile: TravelRouteAPI/Dockerfile
+    ports:
+     - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ./data:/app/data   

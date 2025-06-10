@@ -1,0 +1,10 @@
+services:
+  travelrouteapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "5000:80"
+    volumes:      
+      - ${APPDATA}/ASP.NET/Http:/home/app/.aspnet/http:ro
+      - ${APPDATA}/ASP.NET/Http:/root/.aspnet/http:ro

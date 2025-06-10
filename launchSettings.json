@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "travelrouteapi": "StartDebugging"
+      }
+    }
+  },
+  "applicationUrl": "http://0.0.0.0:5000"
+
+}
